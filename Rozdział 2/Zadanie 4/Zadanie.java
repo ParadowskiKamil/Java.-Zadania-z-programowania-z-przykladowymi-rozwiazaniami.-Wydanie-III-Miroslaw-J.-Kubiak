@@ -16,6 +16,7 @@ class Zadanie
     final double b = skaner.nextDouble();
     System.out.println("Podaj c.");
     final double c = skaner.nextDouble();
+    
     final double x = (c - b) / a;
     System.out.printf("Dla a = %.2f, b = %.2f, c = %.2f wartość x = %.2f.\n", a, b, c, x);
   }

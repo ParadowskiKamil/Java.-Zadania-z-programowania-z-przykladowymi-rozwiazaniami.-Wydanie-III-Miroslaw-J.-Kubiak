@@ -10,6 +10,7 @@ class Zadanie
     final float x = skaner.nextFloat();
     System.out.println("Podaj y.");
     final float y = skaner.nextFloat();
+    
     final double suma = x + y;
     final double roznica = x - y;
     final double iloczyn = x * y;

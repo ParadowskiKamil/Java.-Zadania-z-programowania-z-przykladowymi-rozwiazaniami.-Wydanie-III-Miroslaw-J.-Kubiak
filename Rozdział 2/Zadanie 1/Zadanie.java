@@ -11,6 +11,7 @@ class Zadanie
     final int b = skaner.nextInt();
     System.out.println("Podaj bok c.");
     final int c = skaner.nextInt();
+    
     final String odpowiedz = a * a + b * b == c * c ? "tworzą trójkąt prostokątny." : "nie tworzą trójkąta prostokątnego.";
     System.out.println("Boki:\na = " + a + "\nb = " + b + "\nc = " + c + "\n" + odpowiedz);
   }

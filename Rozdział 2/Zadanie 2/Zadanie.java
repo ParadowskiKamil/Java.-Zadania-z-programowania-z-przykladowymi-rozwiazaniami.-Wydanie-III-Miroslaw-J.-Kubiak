@@ -12,6 +12,7 @@ class Zadanie
     System.out.println("Podaj c.");
     final double c = skaner.nextDouble();
     System.out.printf("Dla a = %.2f, b = %.2f, c = %.2f\n", a, b, c);
+    
     if (Math.pow(b, 2) - 4 * a * c > 0)
     {
       final double x1 = (-b - Math.sqrt(Math.pow(b, 2) - 4 * a * c)) / (2 * a);

@@ -12,11 +12,13 @@ class Zadanie
     System.out.println("Podaj c.");
     final double c = skaner.nextDouble();
     System.out.printf("Dla a = %.2f, b = %.2f, c = %.2f\n", a, b, c);
+    
     int liczbaPierwiastkowTrojmianu = 0;
     if (Math.pow(b, 2) - 4 * a * c == 0)
       liczbaPierwiastkowTrojmianu = 1;
     else if (Math.pow(b, 2) - 4 * a * c > 0)
       liczbaPierwiastkowTrojmianu = 2;
+    
     switch (liczbaPierwiastkowTrojmianu)
     {
       case 0:
