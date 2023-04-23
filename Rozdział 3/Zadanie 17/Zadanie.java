@@ -21,12 +21,12 @@ class Zadanie
       if (wylLiczb[indeksTablicy] < najmniejszaWartoscZeZbioruWylosowanychLiczb)
         najmniejszaWartoscZeZbioruWylosowanychLiczb = wylLiczb[indeksTablicy];
       sumaWszystkichWylosowanychLiczb += wylLiczb[indeksTablicy];
-    } while (++indeksTablicy < 5);
+    } while (++indeksTablicy < wylLiczb.length);
     
     System.out.print("Wylosowano liczby: ");
     System.out.println(wylLiczb[0] + ", " + wylLiczb[1] + ", " + wylLiczb[2] + ", " + wylLiczb[3] + ", " + wylLiczb[4] + ",");
     System.out.println("największa liczba to " + najwiekszaWartoscZeZbioruWylosowanychLiczb + ",");
     System.out.println("najmniejsza liczba to " + najmniejszaWartoscZeZbioruWylosowanychLiczb + ",");
-    System.out.println("średnia = " + sumaWszystkichWylosowanychLiczb / 5 + ".");
+    System.out.println("średnia = " + sumaWszystkichWylosowanychLiczb / wylLiczb.length + ".");
   }
 }

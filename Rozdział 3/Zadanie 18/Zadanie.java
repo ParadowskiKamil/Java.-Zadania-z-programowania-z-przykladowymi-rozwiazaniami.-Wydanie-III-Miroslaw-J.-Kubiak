@@ -13,7 +13,7 @@ class Zadanie
     int indeksTablicy = -1;
     final Random generatorLiczbLosowych = new Random();
 
-    while (++indeksTablicy < 5)
+    while (++indeksTablicy < wylLiczb.length)
     {
       wylLiczb[indeksTablicy] = generatorLiczbLosowych.nextInt(100);
       if (wylLiczb[indeksTablicy] > najwiekszaWartoscZeZbioruWylosowanychLiczb)
@@ -27,6 +27,6 @@ class Zadanie
     System.out.println(wylLiczb[0] + ", " + wylLiczb[1] + ", " + wylLiczb[2] + ", " + wylLiczb[3] + ", " + wylLiczb[4] + ",");
     System.out.println("największa liczba to " + najwiekszaWartoscZeZbioruWylosowanychLiczb + ",");
     System.out.println("najmniejsza liczba to " + najmniejszaWartoscZeZbioruWylosowanychLiczb + ",");
-    System.out.println("średnia = " + sumaWszystkichWylosowanychLiczb / 5 + ".");
+    System.out.println("średnia = " + sumaWszystkichWylosowanychLiczb / wylLiczb.length + ".");
   }
 }
